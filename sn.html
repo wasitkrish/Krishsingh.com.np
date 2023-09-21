@@ -8,10 +8,10 @@
     <link rel="icon" href="assets/imgs/iconmain.png">
     
     <!-- Title -->
-    <title>🌹 ・ Krish</title>
+    <title>SnapChat</title>
 
     <!-- Css -->
-    <link rel="stylesheet" href="assets/css/style.cs">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Javascript -->
     
@@ -24,41 +24,42 @@
     <header>
         <nav>
             <div class="header_logo">
-                      <a href="https://www.KrishSingh.com.np">
-        <img src="assets/imgs/iconmain.png" alt="" srcset="">
-    </a>
-
+                <a href="https://www.KrishSingh.com.np">
+                    <img src="assets/imgs/iconmain.png" alt="" srcset="">
+                </a>
             </div>
             <div class="header_links">
                 <ul class="nav_links">
                     <li class="nav_link"><a href="https://KrishSingh.com.np/">Home</a></li>
-                    <li class="nav_link"><a href="//Krishsingh.com.np/about.html">About</a></li>
-                 <li class="nav_link"><a href="//Krishsingh.com.np/contact.html">Contact</a></li>
-                 <li class="nav_link"><a href="https://www.behance.net/Portfolio-KrishSingh">Portfolio</a></li>
+                       <li class="nav_link"><a href="//Krishsingh.com.np/about.html">About</a></li>
+                    <li class="nav_link"><a href="//Krishsingh.com.np/contact.html">Contact</a></li>
+                    <li class="nav_link"><a href="https://www.behance.net/Portfolio-KrishSingh/projects">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <section class="main">
-        <img src="assets/imgs/R.gif" alt="" srcset="">
-        <span>Krish Singh</span>
-        
-        <p>16 years old, Student and Digital Creator</p>
+  
+        <div class="center">
+            <img src="assets/imgs/snap.jpg" alt="" srcset="">
+            
+          </div>
 
-
+          <span>Krish Singh</span>
+          <span>snapchat :</span>
+          <span>@obviously_Krish</span>
+          
         <ul>
-             <li><a target="_blank" href="https://www.facebook.com/TheyCallMeKrish/"><i class="fab fa-facebook"></i></a></li>
+                 <li><a target="_blank" href="https://www.facebook.com/TheyCallMeKrish/"><i class="fab fa-facebook"></i></a></li>
             <li><a target="_blank" href="https://www.instagram.com/maybe__krish/"><i class="fab fa-instagram"></i></a></li>
-            <li><a target="_blank" href="//krishsingh.com.np/sn.html"><i class="fab fa-snapchat"></i></a></li>
+            <li><a target="_blank" href="https://github.com/KanekiWeb"><i class="fab fa-snapchat"></i></a></li>
             <li><a target="_blank" href="https://discord.gg/AFt9CxHdv3"><i class="fab fa-discord"></i></a></li>
             <li><a target="_blank" href="https://www.tiktok.com/@maybe..krish/"><i class="fab fa-tiktok"></i></a></li>
             <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-            <li><a target="_blank" href="//krishsingh.com.np/shop.html"><i class="fab fa-twitter"></i></a></li>
+             <li><a target="_blank" href="//krishsingh.com.np/shop.html"><i class="fab fa-twitter"></i></a></li>
             <li><a target="_blank" href="//krishsingh.com.np/blog.html"><i class="fab fa-linkedin"></i></a></li>
             <li><a target="_blank" href="//krishsingh.com.np/blog.html"><i class="fab fa-spotify"></i></a></li>
-
-
     
 
         </ul>
@@ -85,6 +86,7 @@
  
     </footer>
 
+    
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -167,6 +169,8 @@ header nav .header_links ul li, section.main ul li {
     list-style-type: none;
 }
 
+
+
 header nav .header_links ul li a {
     outline: none;
     text-decoration: none;
@@ -212,7 +216,12 @@ header nav .header_logo img {
     }
 }
 
-/* Main */
+
+div.center {
+  text-align: center;
+  width: 100%;
+}
+
 
 section.main {
     display: flex;
@@ -223,32 +232,10 @@ section.main {
     min-height: 70vh;
     animation: fadeInUp .8s;
 }
-
-section.main img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 10px solid #21222b93;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
 section.main span {
     color: #fffffe;
     font-size: 30px;
     font-weight: bold;
-}
-
-section.main p {
-    position: relative;
-    top: 50%;
-    border-right: 2px solid rgba(255, 255, 255, .75);
-    white-space: nowrap;
-    overflow: hidden;
-    color: #94a1b2;
-    font-size: 13px;
-    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;
 }
 
 section.main ul {
@@ -274,47 +261,12 @@ section.main ul li a:hover {
     color: #fff;
 }
 
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 20.5em;
-    }
+section.main img {
+    height: 40% !important;
+  width: 40%
 }
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 150px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        transform: translate3d(0, -150px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-
-
     </style>
+
 
 </body>
 </html>
